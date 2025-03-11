@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#cv-template {
+  display: none;
+}
+
+.myimg {
+  border: 1px solid black;
+  width: 200px;
+  border-radius: 10%;
+}
+
+.background {
+  background-color: rgb(186, 209, 255);
+  z-index: 1000;
+}
+
+.header {
+  color: white;
+  align-items: center;
+}
+
+.footer {
+  background-color: rgb(32, 34, 36);
+}
+
+.bt {
+  border: none;
+  background-color: rgb(139, 139, 139);
+}
+
+.icon {
+  padding: 2px 4px 2px 4px;
+}
+
+.text {
+  color: #b9b9b9;
+  padding-bottom: 5px;
+}
+
+.bottom {
+  text-align: center;
+}

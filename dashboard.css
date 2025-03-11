@@ -1,0 +1,154 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container (includes sidebar & content) */
+.main-container {
+  display: flex;
+  height: calc(100vh - 60px); /* Full height minus navbar */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: #34495e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links ul li {
+  display: inline;
+}
+
+.navbar-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #0d3663;
+  color: white;
+  padding: 20px;
+  padding-top: 70px;
+  height: 100vh; /* Full height */
+  position: fixed;
+  top: 60px; /* Below navbar */
+  left: 0;
+  overflow-y: auto; /* Scroll inside sidebar only if needed */
+}
+
+/* Sidebar List */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Sidebar List Items */
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+/* Sidebar Links with Borders */
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 12px 20px;
+  border: 1px solid #dde4ea; /* Add border */
+  border-radius: 5px; /* Slight rounding */
+  transition: background 0.3s ease, border-color 0.3s ease;
+  font-size: 16px;
+}
+
+/* Hover Effect */
+.sidebar ul li a:hover {
+  background: #1a252f;
+  border-color: #fff; /* Change border color on hover */
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px; /* Adjust to fit sidebar width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content vertically */
+  overflow: hidden; /* Prevents extra scrolling */
+}
+
+/* Heading */
+.content h2 {
+  padding-top: 50px;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.content p {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Dashboard Image */
+.dashboard-image {
+  width: 100%; /* Fill available space */
+  max-width: 1000px; /* Prevent excessive stretching */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure proper fit */
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #34495e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  color: white;
+  font-size: 15px;
+}
