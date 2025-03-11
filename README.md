@@ -16,4 +16,4 @@ The Dynamic Portfolio Generator is a web-based application that allows users to 
 🔹 Frontend – HTML, CSS, JavaScript
 🔹 Backend – PHP
 🔹 Database – MySQL (phpMyAdmin for management)
-🔹 PDF Generation – PHP libraries (e.g., TCPDF, FPDF)
+🔹 PDF Generation 
